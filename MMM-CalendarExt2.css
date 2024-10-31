@@ -4,6 +4,7 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -13,6 +14,7 @@
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -78,7 +80,7 @@
   width: 100%;
 }
 
-.CX2 .slot > .slotContent {
+.CX2 .slot>.slotContent {
   position: relative;
   width: 100%;
   background-image: linear-gradient(rgb(0 0 0 / 100%), rgb(0 0 0 / 0%));
@@ -187,12 +189,12 @@
   flex-direction: row-reverse;
 }
 
-.CX2 .weekSlot > .slotFooter,
-.CX2 .weekSlot > .slotHeader {
+.CX2 .weekSlot>.slotFooter,
+.CX2 .weekSlot>.slotHeader {
   display: none;
 }
 
-.CX2 .weekSlot > .slotContent {
+.CX2 .weekSlot>.slotContent {
   background-image: none;
   display: flex;
   flex-direction: row;
@@ -202,6 +204,7 @@
 .CX2 .weekSlot.showWeekends .cellSlot {
   width: 14.2%;
 }
+
 .CX2 .weekSlot.hideWeekends .cellSlot {
   width: 19.9%;
 }
@@ -269,6 +272,7 @@
   background-color: #fff;
   color: #000;
 }
+
 .CX2 .event.hiddenEvent {
   display: none;
 }
@@ -280,6 +284,7 @@
   height: 0;
   clear: both;
 }
+
 .CX2 .eventSub {
   display: none;
   text-align: right;
@@ -307,13 +312,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: repeating-linear-gradient(
-      45deg,
+  background: repeating-linear-gradient(45deg,
       transparent,
       transparent 10px,
       rgb(0 0 0 / 20%) 10px,
-      rgb(0 0 0 / 20%) 20px
-    ),
+      rgb(0 0 0 / 20%) 20px),
     linear-gradient(to bottom, rgb(255 255 255 / 20%), rgb(0 0 0 / 0%));
 }
 
@@ -325,9 +328,9 @@
   max-width: var(--column-max-width);
 }
 
-.CX2 .agenda .event {
+/* .CX2 .agenda .event {
   max-width: var(--column-max-width);
-}
+} */
 
 .CX2 .column .timelineSleeve .event {
   max-width: none;
@@ -382,6 +385,7 @@
 .CX2 .weekSlot .eventMain .eventIcon {
   order: 1;
 }
+
 .CX2 .weekSlot .eventMain .eventTitle {
   order: 3;
 }
@@ -395,9 +399,11 @@
 .CX2 .period .eventTime .relative {
   display: inline;
 }
+
 .CX2 .period .eventTime {
   text-align: right;
 }
+
 .CX2 .period:not(.daily) .event.overday:not(.fullday) .dateTime {
   display: inline;
 }
@@ -453,4 +459,8 @@
   border-radius: 12px;
   background-color: rgb(64 64 64 / 60%);
   position: relative;
+}
+
+.now {
+  background: #e30613 !important;
 }
