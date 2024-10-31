@@ -92,6 +92,28 @@
   /* display:none; */
 }
 
+.custom-current .event {
+  min-height: 100px;
+}
+
+.custom-current .eventMain {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+}
+
+.custom-current .eventTitle {
+  min-height: 70px;
+}
+
+.custom-current .eventTime {
+  flex: 1
+}
+
+.custom-current .eventDescription {
+  display: none
+}
+
 /* row and column */
 .CX2 .view.row {
   /* type: row view */
